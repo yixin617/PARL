@@ -158,8 +158,7 @@ for i in range(1000):
 ## 总结
 
 
-<img src="../../../examples/QuickStart/performance.gif" width="200"/>
-<img src="../../images/quickstart.png" width="200"/>
+<img src="../../../examples/QuickStart/performance.gif" width="300"/><img src="../../images/quickstart.png" width="300"/>
 
 在这个教程，我们展示了如何一步步地构建强化学习智能体，用于解决经典的Cartpole问题。完整的训练代码可以在这个[文件夹](https://github.com/PaddlePaddle/PARL/tree/develop/examples/QuickStart)中找到。
 
