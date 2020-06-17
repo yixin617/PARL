@@ -7,7 +7,7 @@
 
 
 ## 使用场景
-- 想要在**自己的环境**中尝试使用强化学习解决问题
+- 想要在**实际任务中**尝试使用强化学习解决问题
 - 想快速调研下**不同强化学习算法**在同一个问题上的效果
 - 强化学习算法训练速度太慢，想搭建**分布式**强化学习训练平台
 - python的GIL全局锁限制了多线程加速，想**加速python代码**
@@ -41,8 +41,8 @@
         <li><b>教程</b></li>
            <ul>
           <li><a href="tutorial/quick_start.md#quick_start">入门：解决cartpole问题</a></li>
-          <li><a href="tutorial/agent.md#agent">Agent搭建规范</a></li>
-          <li><a href="tutorial/param.md#param">参数管理</a></li>
+          <li><a href="tutorial/module.md#agent">子模块说明</a></li>
+          <li><a href="tutorial/param.md#param">模型参数管理</a></li>
           <li><a href="tutorial/summary.md#summary">绘制训练曲线</a></li>
            </ul>
         </ul>
