@@ -37,15 +37,15 @@
     <td align="center" valign="middle">
       </td>
       <td>
+        <ul>
         <li><b>教程</b></li>
-            <ul>
-          <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">入门：解决cartpole问题</a></li>
+           <ul>
+          <li><a href="tutorial/quick_start.md#quick_start">入门：解决cartpole问题</a></li>
           <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">智能体（Agent）搭建示例</a></li>
           <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">保存模型和加载模型</a></li>
           <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">绘制训练曲线</a></li>
-            </ul>
+           </ul>
         </ul>
-      </ul>
       </td>
       <td align="left" >
         <ul>
@@ -76,10 +76,10 @@
         <li><b>教程</b></li>
             <ul><li><a href="docs/zh_CN/TrainingService/PaiMode.md">部署集群</a></li>
             <li><a href="docs/zh_CN/TrainingService/KubeflowMode.md">入门教程</a></li>
-            <li><a href="docs/zh_CN/TrainingService/FrameworkControllerMode.md">加速案例</a></li>
+            <li><a href="docs/zh_CN/TrainingService/.md">加速案例</a></li>
+            <li><a href="docs/zh_CN/TrainingService/.md">集群信息监控</a></li>
+            <li><a href="docs/zh_CN/TrainingService/.md">如何debug</a></li>
             </ul>
-            <ul><li><a href="docs/zh_CN/TrainingService/DLTSMode.md">集群信息监控与debug</a></li>        
-      </ul>
       </td>
     </tr>
   </tbody>
@@ -105,8 +105,8 @@ git clone https://github.com/PaddlePaddle/PARL
 cd PARL
 pip install .
 ```
-如果遇到网络问题导致的下载较慢，建议使用清华源解决（参考上面的命令）。
-git clone如果较慢，建议使用我们托管在国内码云平台的仓库。
+如果遇到网络问题导致的下载较慢，建议使用清华源解决（参考上面的命令）。<br>
+遇到git clone如果较慢的问题，建议使用我们托管在国内码云平台的仓库。
 ```shell
 git clone https://gitee.com/paddlepaddle/PARL.git
 ```
@@ -114,3 +114,20 @@ git clone https://gitee.com/paddlepaddle/PARL.git
 ### **关于并行**
 
 如果只是想使用PARL的并行功能的话，是无需安装任何深度学习框架的。
+
+
+## 贡献
+本项目欢迎任何贡献和建议。 大多数贡献都需要你同意参与者许可协议（CLA），来声明你有权，并实际上授予我们有权使用你的贡献。
+### 代码贡献规范
+- 代码风格规范<br>
+PARL使用yapf工具进行代码风格的统一，使用方法如下：
+```shell
+pip install yapf==0.24.0
+yapf -i modified_file.py
+```
+- 持续继承测试<br>
+当增加代码时候，需要增加测试代码覆盖所添加的代码，测试代码得放在相关代码文件的`tests`文件夹下，以`_test.py`结尾（这样持续集成测试会自动拉取代码跑）。附：[测试代码示例](../../parl/tests/import_test.py)
+
+
+## 反馈
+- 在 GitHub 上[提交问题](https://github.com/PaddlePaddle/PARL/issues)。
