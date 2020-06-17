@@ -3,7 +3,7 @@
 <img src="../images/bar.png"/>
 </p>
 
-**PARL**是一个主打高性能、稳定复现、轻量级的强化学习框架。<br><br>
+<br>**PARL**是一个主打高性能、稳定复现、轻量级的强化学习框架。<br>
 
 
 ## 使用场景
@@ -83,4 +83,34 @@
       </td>
     </tr>
   </tbody>
+  
 </table>
+
+## **安装**
+
+### **安装**
+PARL 支持并在 Ubuntu >= 16.04, macOS >= 10.14.1, 和 Windows 10通过了测试。 目前在Windows上**仅支持**python3.5+以上的版本，要求是64位的python。
+
+```shell
+pip install parl --upgrade
+```
+如果遇到网络问题导致的下载较慢，建议使用清华源解决:
+```shell
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple parl --upgrade
+```
+
+如果想试试最新代码，可从源代码安装 NNI。
+```shell
+git clone https://github.com/PaddlePaddle/PARL
+cd PARL
+pip install .
+```
+如果遇到网络问题导致的下载较慢，建议使用清华源解决（参考上面的命令）。
+git clone如果较慢，建议使用我们托管在国内码云平台的仓库。
+```shell
+git clone https://gitee.com/paddlepaddle/PARL.git
+```
+
+### **关于并行**
+
+如果只是想使用PARL的并行功能的话，是无需安装任何深度学习框架的。
