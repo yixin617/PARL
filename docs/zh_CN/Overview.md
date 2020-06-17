@@ -40,10 +40,10 @@
         <ul>
         <li><b>教程</b></li>
            <ul>
-          <li><a href="tutorial/quick_start.md#quick_start">入门：解决cartpole问题</a></li>
-          <li><a href="tutorial/module.md#agent">子模块说明</a></li>
-          <li><a href="tutorial/param.md#param">模型参数管理</a></li>
-          <li><a href="tutorial/summary.md#summary">绘制训练曲线</a></li>
+          <li><a href="tutorial/quick_start.md">入门：解决cartpole问题</a></li>
+          <li><a href="tutorial/module.md">子模块说明</a></li>
+          <li><a href="tutorial/param.md">模型参数管理</a></li>
+          <li><a href="tutorial/summary.md">绘制训练曲线</a></li>
            </ul>
         </ul>
       </td>
