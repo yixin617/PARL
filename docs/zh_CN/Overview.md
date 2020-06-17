@@ -1,8 +1,10 @@
 <p align="center">
-<img src="../../.github/PARL-logo.png" width="300"/>
+<img src="../../.github/PARL-logo.png" width="500"/>
+<img src="../images/bar.png"/>
 </p>
 
-PARL是一个主打高性能、稳定复现、轻量级的强化学习框架。
+**PARL**是一个主打高性能、稳定复现、轻量级的强化学习框架。<br><br>
+
 
 ## 使用场景
 - 想要在**自己的环境**中尝试使用强化学习解决问题
@@ -11,7 +13,7 @@ PARL是一个主打高性能、稳定复现、轻量级的强化学习框架。
 - python的GIL全局锁限制了多线程加速，想**加速python代码**
 
 
-PARL文档全览
+## PARL文档全览
 <table>
   <tbody>
     <tr align="center" valign="bottom">
