@@ -105,7 +105,7 @@ class CartpoleAgent(parl.Agent):
 ```
 一般情况下，用户必须实现以下几个函数：
 - 构造函数：
-把algorithm传进来，以及相关的环境参数（用户自定义的）。需要注意的是，这里必须得要初始化父类：super(CartpoleAgent, self).__init__(algorithm)。
+把algorithm传进来，以及相关的环境参数（用户自定义的）。需要注意的是，这里必须得要初始化父类：super(CartpoleAgent, self).\_\_init\_\_(algorithm)。
 - build_program: 定义paddle里面的program。通常需要定义两个program：一个用于训练，一个用于预测。
 - predict: 根据输入返回预测动作（action）。
 - sample：根据输入返回动作（action），带探索的动作。
@@ -160,9 +160,18 @@ for i in range(1000):
 
 <img src="../../../examples/QuickStart/performance.gif" width="300"/><img src="../../images/quickstart.png" width="300"/>
 
-在这个教程，我们展示了如何一步步地构建强化学习智能体，用于解决经典的Cartpole问题。完整的训练代码可以在这个[文件夹](https://github.com/PaddlePaddle/PARL/tree/develop/examples/QuickStart)中找到。
+在这个教程，我们展示了如何一步步地构建强化学习智能体，用于解决经典的Cartpole问题。完整的训练代码可以在这个[文件夹](https://github.com/PaddlePaddle/PARL/tree/develop/examples/QuickStart)中找到。赶紧执行下面的代码运行尝试下吧：）
 
 ```shell
+# Install dependencies
+pip install paddlepaddle
+
+pip install gym
+git clone https://github.com/PaddlePaddle/PARL.git
+cd PARL
+pip install .
+
+# Train model
 cd examples/QuickStart/
 python train.py
 ```

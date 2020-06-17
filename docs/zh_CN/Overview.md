@@ -41,7 +41,7 @@
         <li><b>教程</b></li>
            <ul>
           <li><a href="tutorial/quick_start.md#quick_start">入门：解决cartpole问题</a></li>
-          <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">智能体（Agent）搭建示例</a></li>
+          <li><a href="tutorial/agent.md#agent">Agent搭建规范</a></li>
           <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">保存模型和加载模型</a></li>
           <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">绘制训练曲线</a></li>
            </ul>
@@ -51,23 +51,22 @@
         <ul>
           <li><b>前沿算法</b></li>
             <ul>
-              <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">MADDPG</a></li>
-              <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#TPE">ES</a></li>
-              <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#TPE">SAC</a></li>
-              <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#TPE">TD3</a></li>
+              <li><a href="https://github.com/PaddlePaddle/PARL/tree/CN_docs/examples/MADDPG">MADDPG</a></li>
+              <li><a href="https://github.com/PaddlePaddle/PARL/blob/CN_docs/examples/ES">ES</a></li>
+              <li><a href="https://github.com/PaddlePaddle/PARL/blob/CN_docs/examples/SAC">SAC</a></li>
+              <li><a href="https://github.com/PaddlePaddle/PARL/blob/CN_docs/examples/TD3">TD3</a></li>
             </ul>
           <li><b>经典算法</b></li>
             <ul>
-              <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">PolicyGradient</a></li>
-              <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#TPE">DQN</a></li>
-            <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#SMAC">DDPG</a></li>
-            <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#MetisTuner">PPO</a></li>
+              <li><a href="https://github.com/PaddlePaddle/PARL/blob/CN_docs/examples/QuickStart">PolicyGradient</a></li>
+              <li><a href="https://github.com/PaddlePaddle/PARL/blob/CN_docs/examples/DQN">DQN</a></li>
+            <li><a href="https://github.com/PaddlePaddle/PARL/blob/CN_docs/examples/DDPG">DDPG</a></li>
+            <li><a href="https://github.com/PaddlePaddle/PARL/blob/CN_docs/examples/PPO">PPO</a></li>
             </ul>
           <li><b>并行算法</b></li>
             <ul>
-              <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">A2C</a></li>
-              <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#TPE">GA3C</a></li>
-            <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#SMAC">IMPALA</a></li>
+              <li><a href="https://github.com/PaddlePaddle/PARL/blob/CN_docs/examples/A2C">A2C</a></li>
+            <li><a href="https://github.com/PaddlePaddle/PARL/tree/CN_docs/examples/IMPALA">IMPALA</a></li>
             </ul>
         </ul>
       </td>
