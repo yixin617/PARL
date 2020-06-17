@@ -42,8 +42,8 @@
            <ul>
           <li><a href="tutorial/quick_start.md#quick_start">入门：解决cartpole问题</a></li>
           <li><a href="tutorial/agent.md#agent">Agent搭建规范</a></li>
-          <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">保存模型和加载模型</a></li>
-          <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#BOHB">绘制训练曲线</a></li>
+          <li><a href="tutorial/param.md#param">参数管理</a></li>
+          <li><a href="tutorial/summary.md#summary">绘制训练曲线</a></li>
            </ul>
         </ul>
       </td>
