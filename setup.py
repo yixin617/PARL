@@ -31,7 +31,12 @@ def _find_packages(prefix=''):
     prefix = prefix
     for root, _, files in os.walk(path):
         if '__init__.py' in files:
-            packages.append(re.sub('^[^A-z0-9_]', '', root.replace('/', '.')))
+            if sys.platform == 'win32':
+                packages.append(
+                    re.sub('^[^A-z0-9_]', '', root.replace('\\', '.')))
+            else:
+                packages.append(
+                    re.sub('^[^A-z0-9_]', '', root.replace('/', '.')))
     return packages
 
 
@@ -72,9 +77,11 @@ setup(
         "cloudpickle==1.2.1",
         "tensorboardX==1.8",
         "tb-nightly==1.15.0a20190801",
-        "flask==1.0.4",
+        "flask>=1.0.4",
         "click",
-        "psutil",
+        "psutil>=5.6.2",
+        "flask_cors",
+        "visualdl>=2.0.0b;python_version>='3' and platform_system=='Linux'",
     ],
     classifiers=[
         'Intended Audience :: Developers',

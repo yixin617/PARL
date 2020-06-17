@@ -3,7 +3,7 @@
 </p>
 
 [English](./README.md) | 简体中文   
-[**文档**](https://parl.readthedocs.io) | [**中文文档**](docs/zh_CN/Overview.md)
+[**文档**](https://parl.readthedocs.io/en/stable/index.html)
 
 > PARL 是一个高性能、灵活的强化学习框架。
 # 特点
@@ -48,7 +48,7 @@ class Agent(object):
 parl.connect('localhost:8037')
 agent = Agent()
 agent.say_hello()
-ans = agent.sum(1,5) # run remotely and not comsume any local computation resources 
+ans = agent.sum(1,5) # run remotely and not comsume any local computation resources
 ```
 两步调度外部的计算资源：
 1. 使用`parl.remote_class`修饰一个类，之后这个类就被转化为可以运行在其他CPU或者机器上的类。
@@ -61,8 +61,8 @@ ans = agent.sum(1,5) # run remotely and not comsume any local computation resour
 
 # 安装:
 ### 依赖
-- Python 2.7 or 3.5+. 
-- [paddlepaddle>=1.6.1](https://github.com/PaddlePaddle/Paddle) (**非必须的**，如果你只用并行部分的接口不需要安装paddle) 
+- Python 2.7 or 3.5+. (**Windows系统**目前仅支持python3.6+以上的环境）
+- [paddlepaddle>=1.6.1](https://github.com/PaddlePaddle/Paddle) (**非必须的**，如果你只用并行部分的接口不需要安装paddle)
 
 
 ```
@@ -83,6 +83,6 @@ pip install parl
 - [冠军解决方案：NIPS2018强化学习假肢挑战赛](examples/NeurIPS2018-AI-for-Prosthetics-Challenge/)
 - [冠军解决方案：NIPS2019强化学习仿生人控制赛事](examples/NeurIPS2019-Learn-to-Move-Challenge/)
 
-<img src="examples/NeurIPS2019-Learn-to-Move-Challenge/image/performance.gif" width = "300" height ="200" alt="NeurlIPS2018"/> <img src=".github/Half-Cheetah.gif" width = "300" height ="200" alt="Half-Cheetah"/> <img src=".github/Breakout.gif" width = "200" height ="200" alt="Breakout"/> 
+<img src="examples/NeurIPS2019-Learn-to-Move-Challenge/image/performance.gif" width = "300" height ="200" alt="NeurlIPS2018"/> <img src=".github/Half-Cheetah.gif" width = "300" height ="200" alt="Half-Cheetah"/> <img src=".github/Breakout.gif" width = "200" height ="200" alt="Breakout"/>
 <br>
 <img src=".github/Aircraft.gif"  width = "808" height ="300"  alt="NeurlIPS2018"/>
