@@ -154,7 +154,7 @@ if __name__ == "__main__":
         help='number of total time steps to train (default: 10e5)')
     parser.add_argument(
         '--env',
-        default='Hopper-v1',
+        default='Hopper-v4',
         help='environment to train on (default: Hopper-v1)')
     args = parser.parse_args()
     args.cuda = torch.cuda.is_available()

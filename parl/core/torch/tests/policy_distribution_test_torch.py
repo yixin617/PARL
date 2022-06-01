@@ -193,7 +193,7 @@ class CategoricalDistributionTest(unittest.TestCase):
         # check shape is [BATCHSIZE, ]
         self.assertEqual(logp.shape, (self.batch_size, ))
 
-        # TODO: the logp output of the uniform distribution should be log(1/num_actions)
+        # the logp output of the uniform distribution should be log(1/num_actions)
         uniform_logits = torch.ones(size=(self.batch_size, self.num_actions))
         dist = self.get_dist(uniform_logits)
         act_smp = dist.sample()
